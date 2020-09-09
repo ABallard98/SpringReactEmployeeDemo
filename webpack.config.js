@@ -8,6 +8,11 @@ module.exports = {
     output: {
         path: __dirname,
         filename: './src/main/resources/static/built/bundle.js',
+        publicPath: "/build/"
+    },
+    devServer: {
+        historyApiFallBack: true,
+        hot: true
     },
     module: {
         rules: [
